@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishtina's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- From Font Awesome -->
+    <script src="https://kit.fontawesome.com/38a780fbb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/portfolio_logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" style="color: white;" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi There, <br> I'm Krishtina Patir</h1>
+                <p>I am a Frontend Developer</p>
+            </div>
+        </div>
+    </div>
+<!-- -------------------------------------about------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/AboutMe.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I’m Krishtina Patir
+                        I’m a passionate Frontend Developer with a creative eye and a love for building elegant, user-friendly web interfaces. 
+                        With a strong foundation in HTML, CSS, JavaScript, and responsive design, I focus on crafting seamless user experiences 
+                        that blend functionality with visual appeal. I enjoy turning ideas into interactive digital experiences and constantly 
+                        strive to learn and grow in the ever-evolving world of web development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June 2023- Aug 2023</span><br>SUMMER WEB INTERN, Anveshan Foundation</li>
+                            <li><span>Nov 2022- March 2023</span><br>VOLUNTEER EXPERIENCE</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>B.Tech-CSE from INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN, New Delhi</li>
+                            <li><span>2021</span><br>XII CBSE from MAHARISHI VIDHYA MANDIR-IV, Guwahati</li>
+                            <li><span>2019</span><br>X CBSE from GYAN EDUCATIONAL INSTITUTION, Guwahati</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------------------------------services------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building responsive and functional websites using modern technologies.
+                       Experienced in HTML, CSS, JavaScript, and popular frameworks like React.
+                       Focused on creating clean, user-friendly interfaces with optimized performance.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Creating visually appealing and user-friendly web interfaces.
+                       Designing intuitive user journeys that enhance engagement and usability.
+                       Focused on responsive layouts that adapt seamlessly across devices.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------------------my work------------------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/UrbanMobility.jpg">
+                <div class="layer">
+                    <h3>Urban Mobility and Route Optimization</h3>
+                    <p>Leverages real-time and historical data to boost transit efficiency by up to 50%, optimizing routes and reducing overcrowding.
+                    </p>
+                    <a href="https://urban-mobility-dashboard.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Walplus.jpg">
+                <div class="layer">
+                    <h3>WALPLUS - Product Search and Comparison Tool</h3>
+                    <p>Developed an intuitive product comparison interface. Added features like price/review analysis and category-based search to 
+                       enhance decision-making. 
+                    </p>
+                    <a href="https://66bf1e591f6ae6f0d198d899--playful-dusk-5451de.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/MetroAccount.jpg">
+                <div class="layer">
+                    <h3>Delhi Metro Service</h3>
+                    <p>Built a user-friendly Metro transport site, boosting engagement by 40% and enhancing web tech skills for an interactive 
+                        experience.
+                    </p>
+                    <a href="https://krishtinapatir.github.io/Delhi-Metro-Account/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- -------------------------------------extra------------------------ -->
+            <div class="work hidden">
+                <img src="images/QR_Code_Generator.jpg">
+                <div class="layer">
+                    <h3>QR Code Generator</h3>
+                    <p>A sleek, user-friendly web app that instantly generates QR codes from any text or URL with a smooth and intuitive interface.
+                    </p>
+                    <a href="https://krishtinapatir.github.io/QR-GENERATOR/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="images/To-Do_List.jpg">
+                <div class="layer">
+                    <h3>TO-DO List</h3>
+                    <p>A simple and intuitive web app that allows users to efficiently manage tasks, set priorities, and track progress with an easy-to-use interface.
+                    </p>
+                    <a href="https://krishtinapatir.github.io/TO-DO-LIST/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="images/Rock_Paper_Scissor.jpg">
+                <div class="layer">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>An interactive and fun web game where users can play against the computer, choosing between rock, paper, or scissors with a simple,
+                        engaging interface.
+                    </p>
+                    <a href="https://krishtinapatir.github.io/ROCK_PAPER_SCISSORS/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="images/Currency_Converter.jpg">
+                <div class="layer">
+                    <h3>Currency Converter</h3>
+                    <p>A user-friendly web app that allows users to quickly and accurately convert currencies with real-time exchange rates.
+                    </p>
+                    <a href="https://krishtinapatir.github.io/CURRENCY-CONVERTER//"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="javascript:void(0);" class="btn" id="see-more-btn">See more</a>
+        <a href="javascript:void(0);" class="btn" id="see-less-btn">See less</a>
+
+        
+
+    </div>
+</div>
+
+<!-- --------------------------------------Contact----------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> krishtinapatir1@gmail.com</p>
+                <!-- <p><i class="fa-solid fa-square-phone"></i> +91 9864736622</p> -->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/krishtinapatir/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/krishtinapatir"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=krishtinapatir1@gmail.com" target=""><i class="fa-solid fa-square-envelope"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cuppyyyyy_cake?igsh=cXoyYndhNTJzbGZw"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="images/Krishtina_Patir_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2025 by <span>Krishtina Patir</span> | All Rights Reserved</p>
+    </div>
+</div>
+
+
+<!-- --------------------------------------javascript----------------------------- -->
+    <script src="app.js"></script>
+</body>
+</html>
